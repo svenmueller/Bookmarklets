@@ -12,6 +12,7 @@ function addParameter(url, parameterName, parameterValue){
 
     sourceUrl = url.substring(0,cl);
 
+
     var urlParts = sourceUrl.split("?");
     var newQueryString = "";
 
@@ -40,4 +41,4 @@ function addParameter(url, parameterName, parameterValue){
     return urlParts[0] + newQueryString + urlhash;
 }
 
-location.href=add(location.href, 'cms','verbose');
+location.href=addParameter(location.href, 'cms','verbose');
