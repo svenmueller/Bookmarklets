@@ -37,8 +37,8 @@ function addParameter(url, parameterName, parameterValue){
     else
         newQueryString += "&";
     newQueryString += parameterName + "=" + parameterValue;
-
     return urlParts[0] + newQueryString + urlhash;
 }
 
+alert('You are now switching to CMS Verbose Mode.');
 location.href=addParameter(location.href, 'cms','verbose');
